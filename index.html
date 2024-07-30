@@ -1,0 +1,303 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<link rel="shortcut icon" type="image/x-icon" href="favicon.ico">
+	<meta charset="utf-8">
+	<meta http-equiv="X-UA-Comaptible" content="IE=edge">
+	<title>KodeTech</title>
+	<meta name="desciption" content="">
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+	<link rel="stylesheet" type="text/css" href="style.css">
+	<script type="text/javascript" src="script.js"></script>
+	<script src="https://code.jquery.com/jquery-3.2.1.js"></script>
+	<script>
+		$(window).on('scroll', function(){
+  			if($(window).scrollTop()){
+  			  $('nav').addClass('row');
+ 			 }else {
+ 		   $('nav').removeClass('row');
+ 		 }
+		})
+	</script>
+</head>
+<body>
+<!-- Navigation Bar -->
+	<header id="header">
+		<nav>
+			<div class="logo"><img src="images/icon/logo.png" alt="logo"></div>
+			<ul>
+				<li><a  href="">Home</a></li>
+				<li><a href="#portfolio_section">Catalog</a></li>
+				<li><a href="#team_section">Collaborators</a></li>
+				<li><a href="#services_section">Services</a></li>
+				<li><a href="#contactus_section">Contact Us</a></li>
+			</ul>
+			<div class="srch"><input type="text" class="search" placeholder="Search..."><img src="images/icon/search.png" alt="search" onclick=slide()></div>
+			<a class="get-started" href="login.html">Register / Login</a>
+			<img src="images/icon/menu.png" class="menu" onclick="sideMenu(0)" alt="menu"><!--1-->
+		</nav>
+		<div class="head-container">
+			<div class="quote">
+				<p>Learning is the foundation of progress, the path to success, and the path to enlightenment.</p>
+				<h5>Education is the process of acquiring knowledge, skills, values, and understanding through formal instruction, training, or self-directed learning, leading to personal growth and development.</h5>
+			</div>
+			<div class="svg-image">
+				<img src="images/extra/svg1.png" alt="svg">
+			</div>
+		</div>
+		<div class="side-menu" id="side-menu">
+			<div class="close" onclick="sideMenu(1)"><img src="images/icon/close.png" alt=""></div>
+			<div class="user">
+				<img src="images/creator/pic.jpeg" alt="Username">
+				<p>Shivam_101</p>
+			</div>
+			<ul>
+				<li><a href="#about_section">About Us</a></li>
+				<li><a href="#portfolio_section">Catalog</a></li>
+				<li><a href="#team_section">Collaborators</a></li>
+				<li><a href="#services_section">Services</a></li>
+				<li><a href="#contactus_section">Contact Us</a></li>
+				<li><a href="#feedBACK">Feedback</a></li>
+			</ul>
+		</div>
+	</header>
+
+
+<!-- Subjects -->
+	<div class="title">
+		<span>Subjects available on KodeTech</span>
+	</div>
+	<br><br>
+	<div class="course">
+		<center><div class="cbox">
+		<div class="det"><a href="subjects/java.html">Programming in Java</a></div>
+		<div class="det"><a href="subjects/C++.html">Programming with C++</a></div>
+		<div class="det"><a href="subjects/web.html">Web Development</a></div>
+	</div></center>
+	<div class="cbox">
+		<div class="det"><a href="subjects/dsa.html">DSA</a></div>
+		<div class="det"><a href="subjects/js.html">Learn JavaScript</a></div>
+		<div class="det"><a href="subjects/python.html">Learn Python</a></div>
+		</div>
+	</div>
+
+	
+<!-- ABOUT -->
+	<div class="diffSection" id="about_section">
+		<center><p style="font-size: 50px; padding: 100px">ABOUT US</p></center>
+		<div class="about-content">
+				<div class="side-image">
+					<img class="sideImage" src="images/extra/e1.jpeg">
+				</div>
+				<div class="side-text">
+					<h2>Who are we?</h2>
+					<p>Education is the process of acquiring knowledge, skills, values, and understanding through formal instruction, training, or self-directed learning, leading to personal growth and development.<br> Educational websites serve as digital hubs for learning, providing diverse resources such as interactive courses, virtual simulations, and engaging videos. These platforms cater to a wide range of subjects, fostering knowledge acquisition, skill development, and intellectual growth in learners of all ages and backgrounds. <br>With the use of HTML(HyperText Markup Language), CSS(Cascading Style Sheet), JS(JavaScript), We have the ability to enhance learning, making it both accessible and captivating for all..</p>
+				</div>
+		</div>
+	</div>
+
+
+<!-- Catalog -->
+	<div class="diffSection" id="portfolio_section">
+		<center><p style="font-size: 50px; padding: 100px; padding-bottom: 40px;">CATALOG</p></center>
+		<div class="content">
+			<p>
+				“E-learning is the highway to skill enhancement and self-empowerment, leading to a journey of lifelong success.” “In the realm of e-learning, success blossoms when curiosity meets consistency on the path of knowledge.” “Success is the product of determination meeting opportunity.” 
+			</p>
+		</div>
+	</div>
+	<div class="extra">
+		<p>Our Stats!!!!</p>
+		<div class="smbox">
+		<span><center><div class="data">100+</div><div class="det">Students Enrolled</div></center></span>
+		<span><center><div class="data">30+</div><div class="det">Courses Offered</div></center></span>
+		<span><center><div class="data">10+</div><div class="det">College Covered</div></center></span>
+		<span><center><div class="data">20+</div><div class="det">Projects Provided</div></center></span>
+		</div>
+	</div>
+
+
+<!-- collaborators -->
+	<div class="diffSection" id="team_section">
+		<center><p style="font-size: 50px; padding-top: 100px; padding-bottom: 60px;">We're the innovators</p></center>
+		<div class="totalcard">
+			<div class="card">
+				<center><img src="images/creator/pic.jpeg"></center>
+				<center><div class="card-title">Shivam Kotalia</div>
+				<div id="detail">
+					<p>“ Learning is the gateway to innovation. As we delve into the realms of knowledge, we unearth the seeds of creativity that lie dormant within us.“</p>
+					<div class="duty"></div>
+					<a href="https://www.linkedin.com/in/shivam-kotalia-56563222b" target="_blank"><button class="btn-shivam">Follow </button></a>
+				</div>
+			</center>
+			</div>
+			<div class="card">
+				<center><img src="images/creator/pic2.jpg"></center>
+				<center><div class="card-title">Mahima Rohila</div>
+				<div id="detail">
+					<p>“The process of learning is a transformational journey. It is the alchemy that turns ignorance into awareness, and curiosity into expertise.“</p>
+					<div class="duty"></div>
+					<a href="https://www.linkedin.com/in/mahima-rohila-607ba2224" target="_blank"><button class="btn-mahima">Follow</button></a>
+				</div>
+				</center>
+			</div>
+		</div>
+	</div>
+
+
+<!-- SERVICES -->
+	<div class="service-swipe">
+		<div class="diffSection" id="services_section">
+		<center><p style="font-size: 50px; padding: 100px; padding-bottom: 40px; color: #fff;">SERVICES</p></center>
+		</div>
+		<a href="subjects/java.html"><div class="s-card"><img src="images/icon/computer-courses.png"><p>Free Online Tech Courses</p></div></a>
+		<a href="subjects/dsa.html"><div class="s-card"><img src="images/icon/d1.png"><p>Learn DSA to improve skills</p></div></a>
+		<a href="#contactus_section"><div class="s-card"><img src="images/icon/discussion.png"><p>Discussion with Our Tutors</p></div></a>
+		<a href="#contactus_section"><div class="s-card"><img src="images/icon/help.png"><p>24x7 Online Support</p></div></a>
+	</div>
+
+<!-- Reviews by Students -->
+<div id="makeitfull">
+	<a href="#review_section"><img src="images/icon/makeitfull.png"></a>
+</div>
+<div class="review">
+	<div class="diffSection" id="review_section">
+		<center><p style="font-size: 40px; padding: 100px; padding-bottom: 40px; color: #2E3D49;">Discover the Voices of Our Students.</p></center>
+	</div>
+	<div class="rev-container">
+		<div class="rev-card">
+			<div class="identity">
+				<img src="images/creator/humanNotExist2.jpeg"><p>Amina</p>
+				<h6>Java</h6>
+				<div class="rating"><img src="images/icon/star.png"><img src="images/icon/star.png"><img src="images/icon/star.png"><img src="images/icon/star.png"></div>
+			</div>
+			<div class="rev-cont">
+				<p id="title">Review:</p>
+				<p id="content">
+					Learning Java here was fantastic! Clear explanations, engaging exercises. From syntax to OOP, I'm coding confidently now. Recommend this platform for anyone starting programming.....
+				</p>
+			</div>
+		</div>
+		<div class="rev-card">
+			<div class="identity">
+				<img src="images/creator/humanNotExist4.jpeg"><p>Sakura Clir</p>
+				<h6>C/C++</h6>
+				<div class="rating"><img src="images/icon/star.png"><img src="images/icon/star.png"><img src="images/icon/star.png"></div>
+			</div>
+			<div class="rev-cont">
+				<p id="title">Review:</p>
+				<p id="content">
+					C++ learning was a breeze! Bite-sized lessons and practical examples. Grasped concepts easily, from variables to classes. Excited to dive into coding projects. Thumbs up!!!!!!!!
+				</p>
+			</div>
+		</div>
+		<div class="rev-card">
+			<div class="identity">
+				<img src="images/creator/humanNotExist3.jpeg"><p>Mateo leo</p>
+				<h6>Webd</h6>
+				<div class="rating"><img src="images/icon/star.png"><img src="images/icon/star.png"><img src="images/icon/star.png"><img src="images/icon/star.png"><img src="images/icon/star.png"></div>
+			</div>
+			<div class="rev-cont">
+				<p id="title">Review:</p>
+				<p id="content">
+					Web development course exceeded expectations! Built sites from scratch, HTML to CSS mastery. Interactive lessons made complex topics simple. Ready to create my own websites. Top-notch......
+				</p>
+			</div>
+		</div>
+		<div class="rev-card">
+			<div class="identity">
+				<img src="images/creator/humanNotExist1.jpeg"><p>Nikolai Phillips</p>
+				<h6>Python</h6>
+				<div class="rating"><img src="images/icon/star.png"><img src="images/icon/star.png"><img src="images/icon/star.png"><img src="images/icon/star.png"></div>
+			</div>
+			<div class="rev-cont">
+				<p id="title">Review:</p>
+				<p id="content">
+					This Python course was outstanding! Starting from basics, I'm now coding fluently. Concepts demystified, from loops to libraries. Hands-on projects cemented learning. Ready to tackle real-world coding challenges. Highly recommended.....
+				</p>
+			</div>
+		</div>
+	</div>
+</div>
+
+<!-- CONTACT US -->
+	<div class="diffSection" id="contactus_section">
+		<center><p style="font-size: 50px; padding: 100px">Contact Us</p></center>
+		<div class="csec"></div>
+		<div class="back-contact">
+			<div class="cc">
+			<form action="mailto:shivamkotalia@gmail.com" method="post" enctype="text/plain">
+				<label>First Name <span class="imp">*</span></label><label style="margin-left: 185px">Last Name <span class="imp">*</span></label><br>
+				<center>
+				<input type="text" name="" style="margin-right: 10px; width: 175px" required="required"><input type="text" name="lname" style="width: 175px" required="required"><br>
+				</center>
+				<label>Email <span class="imp">*</span></label><br>
+				<input type="email" name="mail" style="width: 100%" required="required"><br>
+				<label>Course Details <span class="imp">*</span></label><br>
+				<input type="text" name="text" style="width: 100%" required="required"><br>
+				<label>Message <span class="imp">*</span></label><br>
+				<input type="text" name="message" style="width: 100%" required="required"><br>
+				<button type="submit" id="csubmit">Send Message</button>
+			</form>
+			</div>
+		</div>
+	</div>
+
+
+<!-- FEEDBACK -->
+	<div class="title2" id="feedBACK">
+		<span>Feedback</span>
+		<div class="shortdesc2">
+			<p>Your feedback is highly valuable to us. Kindly share your insights so we can enhance our services. We appreciate your input.</p>
+		</div>
+	</div>
+
+	<div class="feedbox">
+		<div class="feed">
+			<form action="mailto:shivamkotalia@gmail.com" method="post" enctype="text/plain">
+				<label>Your Name</label><br>
+				<input type="text" name="" class="fname" required="required"><br>
+				<label>Email</label><br>
+				<input type="email" name="mail" required="required"><br>
+				<label>Your Message</label><br>
+				<textarea name="addtional"></textarea><br>
+				<button type="submit" id="csubmit">Send Message</button>
+			</form>
+		</div>
+	</div>
+
+<!-- Sliding Information -->
+	<marquee style="background: linear-gradient(to right, #192ef0, #03d8f9); margin-top: 50px;" direction="left" onmouseover="this.stop()" onmouseout="this.start()" scrollamount="20"><div class="marqu">"Education is the catalyst of progress, a bridge from ignorance to enlightenment. It empowers minds, enriches lives, and fuels innovation. Beyond classrooms, it’s a lifelong journey that shapes character, cultivates curiosity, and paves the way for a world where knowledge creates boundless possibilities."
+	</div></marquee>
+
+<!-- FOOTER -->
+	<footer>
+		<div class="footer-container">
+			<div class="left-col">
+				<img src="images/icon/logo.png" style="width: 200px;">
+				<div class="logo"></div>
+				<div class="social-media">
+					<a href="#"><img src="images/icon\fb.png"></a>
+					<a href="#"><img src="images/icon\insta.png"></a>
+					<a href="#"><img src="images/icon\tt.png"></a>
+					<a href="#"><img src="images/icon\ytube.png"></a>
+					<a href="#"><img src="images/icon\linkedin.png"></a>
+				</div><br><br>
+				<p class="rights-text">Copyright © 2023 Developed By Shivam kotalia, Mahima Rohila All Rights Reserved.</p>
+				<br><p><img src="images/icon/location.png"> Evon Technologies,<br>A-5, It Park, Sahashtradhara Road, Dehradun, Uttarakhand 248001</p><br>
+				<p><img src="images/icon/phone.png"> +91-96675-1175<br><img src="images/icon/mail.png">&nbsp; Kodetech@info.com</p>
+			</div>
+			<div class="right-col">
+				<h1 style="color: #fff">Our Journal</h1>
+				<div class="border"></div><br>
+				<p>Enter Your Email to get our News and updates.</p>
+				<form class="newsletter-form">
+					<input class="txtb" type="email" placeholder="Enter Your Email">
+					<input class="btn" type="submit" value="Submit">
+				</form>
+			</div>
+		</div>
+	</footer>
+
+</body>
+</html>
